@@ -1,0 +1,2 @@
+- Udemy Django Assignment
+    - use postgresql & docker
