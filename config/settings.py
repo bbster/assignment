@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     'passengerApp',
     'courseApp',
     'courseApp_v2',
+    'shoppingmallApp',
 
 ]
 
