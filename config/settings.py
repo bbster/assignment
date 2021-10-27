@@ -30,6 +30,7 @@ INSTALLED_APPS = [
     # my_app
     'passengerApp',
     'courseApp',
+    'courseApp_v2',
 
 ]
 
