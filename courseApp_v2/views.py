@@ -3,16 +3,21 @@ from rest_framework import mixins, generics
 
 from courseApp_v2.models import Course
 from courseApp_v2.serializers import CourseSerializer
+from rest_framework import viewsets
 
 
-class CourseList(generics.ListCreateAPIView):
+class CourseViewSet(viewsets.ModelViewSet):
     queryset = Course.objects.all()
     serializer_class = CourseSerializer
 
-
-class CourseDetail(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Course.objects.all()
-    serializer_class = CourseSerializer
+# class CourseList(generics.ListCreateAPIView):
+#     queryset = Course.objects.all()
+#     serializer_class = CourseSerializer
+#
+#
+# class CourseDetail(generics.RetrieveUpdateDestroyAPIView):
+#     queryset = Course.objects.all()
+#     serializer_class = CourseSerializer
 
 #
 # class CourseList(mixins.ListModelMixin, mixins.CreateModelMixin, generics.GenericAPIView):
